@@ -1,4 +1,6 @@
-
+.page-container {
+    height:800px;
+}
 
 #title {
     text-align:center;
@@ -20,4 +22,10 @@
     margin-top:100px;
     margin-left:300px;
     font-size:20px;
+}
+
+#contact-title {
+    text-align:center;
+    font-size:80px;
+    margin-top:100px;
 }
