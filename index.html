@@ -6,28 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ayr</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#sidebar" data-offset="0">
 
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Ayr</h3>
+            </div>
 
-    <div class = "container">
-        <!--This is for all of the pages-->
-        <div class = "page container">
-            <!-- This is one of the pages-->
+            <ul class="nav nav-stacked list-unstyled components">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#testimonials">Testimonials</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="container" style="margin-left: 250px;">
+            <!--This is for all of the pages-->
+            <div class="page container border" id="home">
+                <!-- This is one of the pages-->
+            </div>
+
+            <div class="page container border" id="about">
+                <!-- This is one of the pages-->
+            </div>
+            <div class="page container border" id="testimonials">
+                <!-- This is one of the pages-->
+            </div>
+            <div class="page container border" id="contact">
+                <!-- This is one of the pages-->
+            </div>
         </div>
+
+        <script>
+            $(window).on('activate.bs.scrollspy', function (e) {
+                history.replaceState({}, "", $("a[href^='#']", e.target).attr("href"));
+            });
+        </script>
+
+
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+
+
+
+
 </body>
 
 </html>
