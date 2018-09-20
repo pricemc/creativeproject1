@@ -1,8 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Poppins:300,
-400,
-500,
-600,
-700";
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 
 body {
@@ -96,4 +92,33 @@ a[data-toggle="collapse"] {
 
 .page {
     height: 100vh;
+}
+
+
+#title {
+    text-align:center;
+    font-size:150px;
+    letter-spacing:10px;
+}
+
+#slogan {
+    text-align:center;
+    font-size:30px;
+}
+
+#bottled-air {
+    float:right;
+}
+
+#github-link {
+    float:left;
+    margin-top:100px;
+    margin-left:300px;
+    font-size:20px;
+}
+
+#contact-title {
+    text-align:center;
+    font-size:80px;
+    margin-top:100px;
 }
