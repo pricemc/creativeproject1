@@ -29,7 +29,7 @@ a:focus {
 }
 
 #sidebar {
-    width: 250px;
+    width: 200px;
     position: fixed;
     top: 0;
     left: 0;
@@ -137,4 +137,7 @@ a[data-toggle="collapse"] {
 .centerBlock {
     display:table;
     margin:auto;
+}
+.container {
+
 }
