@@ -1,0 +1,23 @@
+
+
+#title {
+    text-align:center;
+    font-size:150px;
+    letter-spacing:10px;
+}
+
+#slogan {
+    text-align:center;
+    font-size:30px;
+}
+
+#bottled-air {
+    float:right;
+}
+
+#github-link {
+    float:left;
+    margin-top:100px;
+    margin-left:300px;
+    font-size:20px;
+}
