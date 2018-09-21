@@ -52,7 +52,9 @@
                     </div>
 
                     <div class="col align-text-center">
-                        <a id="github-link" href="https://github.com/pricemc/creativeproject1">github.com</a>
+                        <!--<a id="github-link" href="https://github.com/pricemc/creativeproject1">gitAYR.com</a>
+                        <button>gitAYR.com</button>-->
+                        <button type="button" class="btn btn-link" id="gitAYR" onclick="buyAyr()"><p id="buy">gitAYR.com</p></button>
                     </div>
                 </div>
             </div>
@@ -138,6 +140,12 @@
             $(window).on('activate.bs.scrollspy', function (e) {
                 history.replaceState({}, "", $("a[href^='#']", e.target).attr("href"));
             });
+            
+            function buyAyr() {
+                document.getElementById("buy").innerHTML = "Congratulations! <br> You just purchased your first bottle of AYR!";
+                document.getElementById("buy").style.color = "#5bb0e2"
+                document.getElementById("gitAYR").disabled = true;
+            }
         </script>
 
 
